@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h2>your details</h2>
+    <form>
+      <table>
+        <tr>
+          <th>FirstName:</th>
+          <td><input type="taxt" size="25" /></td>
+        </tr>
+        <tr>
+          <th>LastName:</th>
+          <td><input type="taxt" size="25" /></td>
+        </tr>
+        <tr>
+          <th align="right">Mobile:</th>
+          <td><input type="taxt" maxlength="12" /></td>
+        </tr>
+        <tr>
+          <th align="right">submit:</th>
+          <td colspan="2"><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <hr />
+    <h2>Login Page</h2>
+    <form action="login .jsp" method="post">
+      <table>
+        <tr>
+          <th>User Name:</th>
+          <td><input name="username" type="taxt" /></td>
+        </tr>
+        <tr>
+          <th>password:</th>
+          <td><input name="username" type="password" /></td>
+        </tr>
+        <tr></tr>
+        <td><input type="submit" value="login" /></td>
+      </table>
+    </form>
+    <br />
+    <hr />
+    <h2>Using Checkbook</h2>
+    <form>
+      select the languages you know :<br /><br />
+      <input type="checkbox" name="lang1" value="C-language" /><b>C-language</b
+      ><br />
+      <input type="checkbox" name="lang2" value="Python" /><b>
+        Python language</b
+      ><br />
+      <input type="checkbox" value="c++" name="lang3" /><b>C++ language</b
+      ><br />
+      <input type="checkbox" value="JSE" name="lang4" /><b>core language</b
+      ><br />
+      <input type="submit" />
+    </form>
+    <br />
+    <hr />
+    <form>
+      select the languages you know :<br /><br />
+      <input type="checkbox" name="checkbox1" checked /><b>C-language</b><br />
+      <input type="checkbox" name="checkbox2" /><b>pythen</b><br />
+      <input type="checkbox" name="checkbox3" checked /><b>c++</b> <br />
+      <input type="checkbox" name="checkbox4" /><b>jse</b> <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <hr />
+    <form>
+      your Gender:<br /><br />
+      <input type="radio" value="male" name="gender" /><b>male</b> <br />
+      <input type="radio" value="female" name="gender" /><b>female</b> <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <hr />
+    <form>
+      your Payment Preference:<br /><br />
+      <input type="radio" name="payment" value="debit" /><b> Debit card</b>
+      <br />
+      <input type="radio" name="payment" value="credit" /><b> credit card</b>
+      <br />
+      <input type="radio" name="payment" value="cash" /><b>cash</b>
+      <br />
+      <input type="radio" name="payment" value="cd" /><b>cash on delivery</b>
+      <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <hr />
+    <form enctype="multipart/form-data" action="imghandler.jsp" method="post">
+      <h2>Browser for a file to upload:</h2>
+      <input type="file" name="uploaded_file" />
+      <br /><br />
+      <input type="submit" value="uploaded it now" />
+    </form>
+    <br />
+    <hr />
+    <h2>TextArea Demo:-</h2>
+    <p>your views about our site</p>
+    <form>
+      <textarea rows="5" cols="30"></textarea>
+    </form>
+    <br />
+    <hr />
+    <b>Your Language of choice:</b>
+    <form>
+      <select name="Language">
+        <option value="java">java</option>
+        <option value="Python">Python</option>
+        <option value="java script">java script</option>
+        <option value="PHP" selected>PHP</option>
+      </select>
+      <br />
+      <input type="checkbox" id="agree" value="agree" />
+      <label for="agree">agree</label>
+      <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <br />
+    <form>
+      <label for="mybdate">select your birthdate:</label>
+      <input type="date" id="mybdate" name="birthdate" />
+      <input type="submit" value="click me " />
+    </form>
+    <br />
+    <form>
+      <label for="youremail">Enter A valid Email Address :</label>
+      <input type="email" id="youremail" required /><br />
+      <input type="checkbox" id="agree" value="agree" />
+      <label for="agree">agree</label>
+      <br />
+      <input type="submit" value="click me " /><br />
+    </form>
+    <br />
+    <form>
+      <label for="userage"> Enter Teen Age:</label>
+      <input type="number" id="userage" min="18" max="30" /><br />
+      <input type="submit" /><br />
+      <br />
+    </form>
+    <form>
+      <label for="mysearch"> search for website :</label>
+      <input type="search" id="mysearch" />
+    </form>
+    <br />
+    <form>
+      <h2>Placehold demo</h2>
+      <input type="taxt" name="fname" placeholder="Enter FirstName" /> <br />
+      <input type="taxt" name="lname" placeholder="Enter lastName" /> <br />
+      <input type="submit" /><br />
+    </form>
+    <br />
+    <form>
+      <h2>Autofocus Demo</h2>
+      FirstName :<input
+        type="taxt"
+        name="fname"
+        placeholder="Enter FirstName"
+        autofocus
+      />
+      <br />
+      LasttName :<input
+        type="taxt"
+        name="lname"
+        placeholder="Enter lastName"
+        autofocus
+      />
+      <br />
+      <input type="submit" /><br />
+    </form>
+    <br />
+    <form>
+      <label for="First Name">First Name</label>
+      <input type="text" id="FirstName" required /><br />
+      <label for="last Name">last Name</label>
+      <input type="text" id="lastName" required /><br />
+      <input type="submit" /><br />
+    </form>
+    <br />
+  </body>
+</html>
